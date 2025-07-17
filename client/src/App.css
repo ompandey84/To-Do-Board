@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.kanban-board {
+  display: flex;
+  flex: 1;
+  background: #f4f4f4;
+  padding: 24px;
+  gap: 24px;
+}
+.kanban-column {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  flex: 1;
+  min-width: 220px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.kanban-task {
+  background: #e3eaff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: grab;
+  transition: transform 0.2s;
+}
+.kanban-task:active {
+  transform: scale(1.04) rotate(-2deg);
+}
+.activity-log {
+  width: 300px;
+  background: #222;
+  color: #fff;
+  padding: 16px;
+  overflow-y: auto;
+  border-radius: 8px;
+  margin-left: 16px;
+  height: 100vh;
+}
+.auth-container {
+  max-width: 320px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0002;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auth-container input {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+.auth-container button {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.auth-container .error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 4px;
+}
